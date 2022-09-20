@@ -1,0 +1,60 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Summary from '@/components/Summary'
+import Image from 'next/future/image'
+import Link from 'next/link'
+
+import ApiOverview from './ApiOverview'
+
+export const meta = {
+  author: 'Maurits Misana',
+  date: '2022-09-19',
+  title: 'Voorkom te sterke koppeling van systemen binnen de watersportsector',
+  description:
+    'Een centrale Data Hub voor de watersportsector, waarin alle relevante data omtrent opleidingen binnen de watersportsector wordt verzameld en gedeeld. Een Data Hub die de watersportsector in staat stelt om de data te gebruiken voor het ontwikkelen van nieuwe producten en diensten, het verbeteren van de bedrijfsvoering en het versterken van de concurrentiepositie.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Summary
+  highlights={[
+    {
+      id: 'data-hub',
+      content:
+        'Zet als watersportsector een centrale Data Hub op die (opleidings)gegevens, authenticatie en authorisatie levert (via Single Sign On).',
+    },
+    {
+      id: 'coupling',
+      content: (
+        <>
+          Voorkom een te hoge mate van{' '}
+          <Link href="https://www.ben-morris.com/why-is-loose-coupling-between-services-so-important/">
+            koppeling
+          </Link>{' '}
+          tussen deze data enerzijds en verschillende applicaties (interfaces)
+          anderzijds, dit bemoeilijkt toekomstige ontwikkelingen en zorgt voor
+          onzekerheid bij andere gebruikers.
+        </>
+      ),
+    },
+    {
+      id: 'governance',
+      content:
+        'Zorg voor een governance structuur van deze Data Hub, waarbij de bond / het CWO verantwoordelijk is voor de kwaliteit van de data en technisch belanghebbende met domeinkennis besluiten over de (technische) ontwikkeling.',
+    },
+  ]}
+/>
+
+Een roostersysteem voor opleidingslocaties dat automatisch de bevoegdheden van hun instructeurs toont bij het indelen of één identiteit voor cursisten om in te loggen bij zowel opleidingslocatie als diplomaregister. Zomaar twee voorbeelden van **digitale innovaties** in de watersportsector die mogelijk worden zodra geauthenticeerde partijen, op geautomatiseerde wijze toegang kunnen verkrijgen tot relevante opleidingsdata. Een goed opgezette **Data Hub** draagt bij dat zich een innovatief landschap van nieuwe producten en diensten kan ontwikkelen, die zowel voordelig zijn voor **opleidingslocaties** als **cursisten** (consumenten).
+
+De partij die deze gegevens in handen heeft is de [Stichting Commissie Watersportopleidingen](https://cwo.nl/over-cwo/over-de-cwo") (CWO), een samenwerking van moederbedrijven het [Watersportverbond](https://www.watersportverbond.nl/) (sportverenigingen) en de [HISWA-RECRON](https://www.hiswarecron.nl/) (ondernemersorganisatie). Eerder dit jaar heeft de stichting uitgesproken dat zij, onder de noemer 'CWO 3.0', werkt aan een nieuwe visie op haar eigen toekomst. Onderdeel daarvan zijn het ontwikkelen van een 'kennisplatform' en een 'modern gebruiksvriendelijk online platform'.
+
+Grote **valkuil** bij deze ontwikkeling zou zijn om een applicatie te ontwerpen waarbij de interface en de onderliggende data **te sterk gekoppeld** zijn. In <Link href='/'>mijn visie</Link> op een digitale watersportwereld bouwen verschillende partijen (sportbonden, verenigingen, vrijwilligers en commerciële partijen) aan applicaties, producten en diensten, die deels of geheel gebruik maken van deze data. In zo'n landschap is het niet wenselijk dat aanpassingen aan de interface of functies van bijvoorbeeld een diplomasysteem, direct impact hebben op de applicaties van andere partijen. Meer achtergrond over het fenomeen van koppelingen lees je in <Link href='https://www.ben-morris.com/why-is-loose-coupling-between-services-so-important/' target="_blank" rel="noopener noreferrer">dit artikel van Ben Morris</Link>.
+
+Een ander belangrijk aspect van deze Data Hub is de **governance structuur**. Buiten kijf staat dat alleen de CWO eigenaarschap over de data moet hebben. Maar de **wensen** van applicatiemakers (en onderliggend hun gebruikers) omzetten in **technische afwegingen** (bijvoorbeeld OAuth als basis voor de SSO oplossing of keuze in REST, GraphQL of een RPC API) is niet iets wat in het straatje van de CWO past. Voor effectieve besluitvorming moet de CWO dus zorgen dat de partijen met domeinkennis over zowel de data als de technische wensen, dit samen met hen formuleren richting de ontwikkelaar van de Data Hub. Dit zorgt ook voor zekerheid bij ontwikkelaar, dat ze niet zijn overgeleverd aan de grillen van de CWO en haar leveranciers als het aankomt op ontwikkelingen van de Data Hub. Het laatste uiteraard niet zou bijdragen aan een uitnodigend digitaal landschap richting derden.
+
+Meer over de Data Hub en de rol van verschillende partijen staat op de <Link href='/'>homepage</Link>.
+
+<ApiOverview />
+<figcaption align="left" className="-mt-6">
+  <b>Fig.1 - Schematische weergave van data en relaties binnen de Data Hub</b>
+</figcaption>
