@@ -101,7 +101,7 @@ export default function Home({}: NextPage<{}>) {
               maken van de mogelijkheden die de digitale wereld haar biedt.
             </p>
             <p>
-              Tijd om als sector <strong>gemeenschappelijk</strong> de{' '}
+              Tijd om als sector gemeenschappelijk de{' '}
               <strong>digitale visie</strong> te vernieuwen, versterken en
               versnellen. Waarbij we voor ogen houden dat we de watersport{' '}
               <strong>eenvoudiger, leuker en toegankelijker</strong> willen
@@ -260,7 +260,8 @@ export default function Home({}: NextPage<{}>) {
             .
           </p>
           <p>
-            Enkele voorbeelden van applicaties die onder regie van de CWO staan:
+            Enkele voorbeelden van applicaties die onder regie van de CWO staan
+            (domeinnamen zijn enkel ter illustratie):
           </p>
           <ul className="-mt-2" role="list">
             <li>
@@ -326,11 +327,15 @@ export default function Home({}: NextPage<{}>) {
 
           <h4 className="-mb-4 font-medium">Stichting Digitale Watersport</h4>
           <p>
-            Het (technische) beheer van de Data Hub wordt uitgevoerd door de op
-            te richten <strong>Stichting Digitale Watersport</strong>. De
-            stichting heeft als <strong>missie</strong> om een innovatieve,
-            bereikbare, veilige en toegankelijke digitale watersportsector
-            mogelijk te maken.
+            Uitgangspunt is dat alle betrokken partijen, zowel de CWO (als
+            beheerder van de data), als de ontwikkelaars van applicaties, gebaat
+            zijn bij een kostenefficiënte ontwikkeling en beheer van de Data
+            Hub. Verschillende governance vormen zijn mogelijk, waarbij ik
+            voorstel om het (technische) beheer van de Data onder te brengen in
+            de op te richten <strong>Stichting Digitale Watersport</strong>. De{' '}
+            <strong>missie</strong> luidt om een innovatieve, bereikbare,
+            veilige en toegankelijke digitale watersportsector mogelijk te
+            maken.
           </p>
           <p>
             Binnen de stichting werken de CWO en digitale watersportpartijen
@@ -339,16 +344,24 @@ export default function Home({}: NextPage<{}>) {
             van de protocollen en standaarden. De stichting ontwikkelend
             nadrukkelijk <strong>geen</strong> eigen gebruikersapplicaties, maar
             faciliteert de ontwikkeling van applicaties door derden (de CWO zelf
-            en andere partijen).
+            en andere partijen). Een bijzondere rol is weggelegd voor de CWO,
+            welke verantwoordelijk is voor de <strong>kwaliteit</strong> van de
+            gegevens in de Data Hub.
           </p>
           <p>
-            Een bijzondere rol is weggelegd voor de CWO, welke verantwoordelijk
-            is voor de <strong>kwaliteit</strong> van de gegevens in de Data
-            Hub.
+            Het oprichten van een stichting lijkt in eerste instantie tegen het
+            uitgangspunt van &apos;efficiente besluitvorming&apos; in te gaan,
+            maar <strong>dat beeld bestrijd ik</strong>. Juist een goede brug
+            tussen de CWO enerzijds, en de technische leverancier van de Data
+            Hub anderszijds, gaat er voor zorgen dat zaken sneller goed worden
+            uitgevoerd.
           </p>
           <p>
-            Door de Data Hub onder te brengen in deze stichting, is
-            kostenefficiënte ontwikkeling en beheer mogelijk.
+            Uiteraard zijn <strong>andere vormen van governance</strong> ook
+            mogelijk, maar belangrijk om te waarborgen is dat de ontwikkelaars
+            van applicaties belang hebben bij een goede, stabiele en innovatieve
+            Data Hub en zij daarom ook een bijdrage (wensten te) leveren
+            hieraan.
           </p>
         </Prose>
       </Container>
