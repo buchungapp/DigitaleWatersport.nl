@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { Container } from '@/components/Container'
+import HeadTags from '@/components/HeadTags'
 import { Prose } from '@/components/Prose'
 import { formatDate } from '@/lib/formatDate'
 
@@ -23,10 +24,11 @@ export function ArticleLayout({ children, meta, previousPathname }) {
 
   return (
     <>
-      <Head>
-        <title>{`${meta.title} - DigitaleWatersport.nl`}</title>
-        <meta name="description" content={meta.description} />
-      </Head>
+      <HeadTags
+        title={`${meta.title} - DigitaleWatersport.nl`}
+        desc={meta.description}
+        canonical={`https://www.digitalewatersport.nl/artikelen/${meta.slug}`}
+      />
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
           <div className="mx-auto max-w-2xl">

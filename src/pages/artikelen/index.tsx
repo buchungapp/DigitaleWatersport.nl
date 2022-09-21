@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import CopyableSpan from '@/components/CopyableSpan'
+import HeadTags from '@/components/HeadTags'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -39,13 +40,11 @@ function Article({ article }: { article: Article }) {
 export default function ArticlesIndex({ articles }: { articles: Article[] }) {
   return (
     <>
-      <Head>
-        <title>Artikelen - DigitaleWatersport.nl</title>
-        <meta
-          name="description"
-          content="Overzicht van achtergrond artikelen die de visie op een digitale watersportwereld verder duiden."
-        />
-      </Head>
+      <HeadTags
+        title="Artikelen - DigitaleWatersport.nl"
+        desc="Overzicht van achtergrond artikelen die de visie op een digitale watersportwereld verder duiden."
+        canonical="https://www.digitalewatersport.nl/artikelen"
+      />
       <SimpleLayout
         title="Achtergrond artikelen."
         intro={

@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import CopyableSpan from '@/components/CopyableSpan'
 import Entity from '@/components/Entity'
+import HeadTags from '@/components/HeadTags'
 import LandscapeOverview from '@/components/LandscapeOverview'
 import { Prose } from '@/components/Prose'
 import Referer from '@/components/Referer'
@@ -72,17 +73,7 @@ function PrivacyIcon(props: React.ComponentProps<'svg'>) {
 export default function Home({}: NextPage<{}>) {
   return (
     <>
-      <Head>
-        <title>
-          DigitaleWatersport.nl - visie op een eenvoudigere, leukere en
-          toegankelijkere watersport middels digitale technologie.
-        </title>
-        <meta
-          name="description"
-          content="DigitaleWatersport.nl biedt een visie op een eenvoudigere, leukere en
-          toegankelijkere watersport middels digitale technologie."
-        />
-      </Head>
+      <HeadTags />
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">

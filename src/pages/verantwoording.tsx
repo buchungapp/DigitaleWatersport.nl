@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import CopyableSpan from '@/components/CopyableSpan'
+import HeadTags from '@/components/HeadTags'
 import { Prose } from '@/components/Prose'
 import { TwitterIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/maurits_square.jpg'
@@ -50,13 +51,11 @@ function MailIcon(props: React.ComponentProps<'svg'>) {
 export default function Accountability() {
   return (
     <>
-      <Head>
-        <title>Verantwoording - DigitaleWatersport.nl</title>
-        <meta
-          name="description"
-          content="DigitaleWatersport.nl is een initatief van Maurits Misana, die de watersportsector wil helpen met het versnellen van de digitale transformatie."
-        />
-      </Head>
+      <HeadTags
+        title="Verantwoording - DigitaleWatersport.nl"
+        desc="DigitaleWatersport.nl is een initatief van Maurits Misana, die de watersportsector wil helpen met het versnellen van de digitale transformatie."
+        canonical="https://www.digitalewatersport.nl/verantwoording"
+      />
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
