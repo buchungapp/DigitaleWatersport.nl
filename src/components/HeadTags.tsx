@@ -25,6 +25,7 @@ const HeadTags = ({
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={desc} />
       <meta property="twitter:url" content={canonical} />
+      <meta property="twitter:card" content="summary" />
       <meta property="twitter:creator" content="@MauritsMisana" />
     </Head>
   )
