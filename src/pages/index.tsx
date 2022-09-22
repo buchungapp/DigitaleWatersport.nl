@@ -284,7 +284,7 @@ export default function Home({}: NextPage<{}>) {
             ).
           </p>
           <p>
-            Een ergenis voor klanten in dit boekingsproces is dat zij telkens
+            Een ergernis voor klanten in dit boekingsproces is dat zij telkens
             opnieuw moeten aangeven wat de laatste behaalde vorderingen zijn.
             Met de opzet van het CWO systeem is het namelijk mogelijk dat een
             cursist elders verder heeft getrained. Een veel betere ervaring voor
@@ -332,7 +332,7 @@ export default function Home({}: NextPage<{}>) {
             Binnen de stichting werken de CWO en digitale watersportpartijen
             samen in de besluitvorming omtrent de Data Hub. De stichting is
             verantwoordelijk voor het beheer van de Data Hub, en het onderhouden
-            van de protocollen en standaarden. De stichting ontwikkelend
+            van de protocollen en standaarden. De stichting ontwikkeld
             nadrukkelijk <strong>geen</strong> eigen gebruikersapplicaties, maar
             faciliteert de ontwikkeling van applicaties door derden (de CWO zelf
             en andere partijen). Een bijzondere rol is weggelegd voor de CWO,
